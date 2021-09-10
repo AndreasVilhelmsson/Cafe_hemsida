@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --black-coffee: #38302e;
+  --dim-gray: #6f686680;
+  --black: #232425;
+  --light-color: #666;
+  --box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  --white: #fff;
+  --grey: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* line-height: 1.75px; */
+  font-family: "Roboto", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+/*************start header and navbar *************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--dim-gray);
+  padding: 1rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 1000; */
+  box-shadow: var(--box-shadow);
+}
+
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--black-coffee);
+  font-weight: bolder;
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--white);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: var(--white);
+  background: var(--black-coffee);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background: var(--grey);
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: var(--white);
+  background: var(--black-coffee);
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-container > * {
+  width: 20%;
+  height: 20%;
+}
+/*********************************** media queries **************************/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+/*********************** 768px ****************************/
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--dim-gray);
+    /* border-top: 0.1rem solid rgba(0, 0, 0, 0.2); */
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: rgb(65, 58, 53);
+  }
+}
+/*************end of header and navbar***************/
+
+#page {
+  margin-top: 1.8rem;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "main  main main  main"
+    "article1 article2 article3 article4"
+    "foot foot foot foot";
+  grid-template-rows: 5fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#page > article:first-child {
+  grid-area: article1;
+  background-color: #353130;
+}
+
+#page > article:nth-child(2) {
+  grid-area: article2;
+  background-color: #ffa08c;
+}
+
+#page > article:nth-child(3) {
+  grid-area: article3;
+  background-color: #3c4468;
+}
+
+#page > article:last-child {
+  grid-area: article4;
+  background-color: #683c51;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}
