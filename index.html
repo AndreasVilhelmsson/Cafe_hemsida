@@ -9,17 +9,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Elins cafe</title>
+    <title>cafe. home</title>
   </head>
   <body>
     <header>
-      <a href="" class="logo">
-        <i class="fab fa-java"></i>
-        cafe.
-      </a>
+      <div class="header-icon-container">
+        <a href="" class="logo">
+          <i class="fab fa-java"></i>
+          cafe.
+        </a>
+      </div>
 
       <nav class="navbar">
-        <a class="active" href="#home">home</a>
+        <a class="active" href="#home">Home</a>
         <a href="#menu">Menu</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -30,37 +32,187 @@
         <a href="#" class="fab fa-instagram"></a>
       </div>
     </header>
+
     <section id="page">
-      <main>Main area</main>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-          iusto temporibus sapiente hic nobis excepturi laboriosam totam sequi
-          aliquam doloribus? article1
-        </p>
+      <main class="main-page">
+        <section class="main-header-text">
+          <h1>Godaste cafeèt i stan</h1>
+          <p>Prenumerera på vårt nyhetsbrev</p>
+          <form action="" method="POST">
+            <div id="main-form">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="main-form-input"
+                placeholder="example@mail.com"
+              />
+              <input
+                type="button"
+                value="Veckans nyheter"
+                name="button"
+                class="main-btn"
+              />
+            </div>
+          </form>
+        </section>
+      </main>
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+            <path
+              d="M 0,1
+                    L 0,0
+                    L 1,0
+                    L 1,0.98
+                    C .50 1, .50 .9, 0 1
+                    Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <article class="card-container">
+        <section class="card">
+          <a href="http://">
+            <div class="imgBx">
+              <img
+                src="images/coffee-hero.jpg"
+                alt="spoon"
+                class="card-images"
+              />
+            </div>
+            <div class="card-content">
+              <h2>Daily dose of coffee</h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+            </div>
+          </a>
+        </section>
       </article>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-          iusto temporibus sapiente hic nobis excepturi laboriosam totam sequi
-          aliquam doloribus? article2
-        </p>
+
+      <article class="card-container">
+        <section class="card">
+          <div class="imgBx">
+            <img src="images/cafe2.jpg" alt="spoon" class="card-images" />
+          </div>
+          <div class="card-content">
+            <h2>Daily dose of coffee</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+          </div>
+        </section>
       </article>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-          iusto temporibus sapiente hic nobis excepturi laboriosam totam sequi
-          aliquam doloribus? article3
-        </p>
+      <article class="card-container">
+        <section class="card">
+          <div class="imgBx">
+            <img src="images/latteart.jpeg" alt="spoon" class="card-images" />
+          </div>
+          <div class="card-content">
+            <h2>Daily dose of coffee</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+          </div>
+        </section>
       </article>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-          iusto temporibus sapiente hic nobis excepturi laboriosam totam sequi
-          aliquam doloribus? article 4
-        </p>
+      <article class="card-container">
+        <section class="card">
+          <div class="imgBx">
+            <img src="images/glass.jpeg" alt="spoon" class="card-images" />
+          </div>
+          <div class="card-content">
+            <h2>Daily dose of coffee</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+          </div>
+        </section>
       </article>
-      <footer>Footer</footer>
+
+      <figure id="picture-left">
+        <picture
+          ><source
+            srcset="images/beans_360x202.jpeg"
+            media="(min-width: 769px)" />
+          <source
+            srcset="images/beans_384x216.jpeg"
+            media="(min-width: 361px)" />
+          <img
+            class="responsive-img"
+            src="images/beans_360x202.jpeg"
+            alt="Hands holding coffee beans."
+        /></picture>
+      </figure>
+      <section id="text-right">
+        <h1 class="picture-text-head">Only the best beans</h1>
+        <p class="picture-text">
+          "As with some Bordeaux chateaux or certain Burgundy domains, the
+          harvests from the best coffee farms are sold in advance, allocated by
+          roaster. The producers selected their roaster customers based on their
+          capacity to best add value to the raw material and to sell it at a
+          fair price. In order to be able to travel to their customers' premises
+          and to thus grasp how they work and better define their market, some
+          farmers now integrate their travel expenses into the price of their
+          coffees. For the subsequent harvests they can thus take into
+          consideration the consumption habits in the concerned countries." -
+          CEO
+        </p>
+      </section>
+      <figure id="picture-right">
+        <picture
+          ><source
+            srcset="images/latteart_490x275.jpeg"
+            media="(min-width: 769px)" />
+          <source
+            srcset="images/latteart_384x216.jpeg"
+            media="(min-width: 361px)" />
+          <img
+            class="responsive-img"
+            src="images/latteart_360x202.jpeg"
+            alt="Barista making latte art."
+        /></picture>
+      </figure>
+      <section id="text-left">
+        <h1 class="picture-text-head">Skilled baristas</h1>
+        <p class="picture-text">
+          No specials, no shortcuts, no excuses. When chef Sandra Vega took a
+          two-week trip to Japan, she had never had ramen before. Upon returning
+          to the States, she dedicated herself to learning how to make the
+          perfect bowl. The rest is history.
+        </p>
+      </section>
+
+      <footer class="footer-container">
+        <div class="footer-list-item">
+          <h3>OPENING HOURS</h3>
+          <p>
+            MONDAY CLOSED TUESDAY 9:00 - 22:00 WEDNESDAY 9:00 - 22:00 THURSDAY
+            9:00 - 22:00 FRIDAY * 9:00 - 1:00 SATURDAY * 12:00 - 01:00 SUNDAY
+            9:00 - 22:00
+          </p>
+        </div>
+        <div class="footer-list-item">
+          <h3>LATEST POSTS</h3>
+          <p>
+            EXPAND YOUR MIND, CHANGE EVERYTHING 14.02.2017 PLACES TO GET LOST
+            14.02.2017 LEWIS HOWES 14.02.2017 ELEVATE YOUR EXPECTATIONS
+            14.02.2017
+          </p>
+        </div>
+        <div class="footer-list-item">
+          <h3>CONTACT US</h3>
+          <p>
+            Coffebeans@qodeinteractive.com 1-444-123-4559 Raymond Boulevard 224,
+            New York
+          </p>
+        </div>
+        <div class="footer-list-item">
+          <h3>OTHER LOCATIONS</h3>
+          <p>
+            BARISTA COFFEE SHOP 2606 Saints Alley Tampa, FL 33602 BARISTA CAFE
+            3497 Watson Street Camden, NJ 08102
+          </p>
+        </div>
+      </footer>
     </section>
 
     <script src="js/script.js"></script>

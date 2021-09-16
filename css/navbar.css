@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --black-coffee: #38302e;
+  --dim-gray: #6f6866;
+  --black: #232425;
+  --light-color: #666;
+  --box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.9);
+  --white: #fff;
+  --grey: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* line-height: 1.75px; */
+  font-family: "Roboto", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+/*************start header and navbar *************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--dim-gray);
+  padding: 1rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 1000; */
+  box-shadow: var(--box-shadow);
+}
+
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--black-coffee);
+  font-weight: bolder;
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--white);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: var(--white);
+  background: var(--black-coffee);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background: var(--grey);
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: var(--white);
+  background: var(--black-coffee);
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-container > * {
+  width: 20%;
+  height: 20%;
+}
+/*********************************** media queries **************************/
