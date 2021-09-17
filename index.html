@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="cafe. provides information about the american coffee shop, cafe., located in Gothenburg, Sweden."
+    />
     <script
       src="https://kit.fontawesome.com/affdfefe88.js"
       crossorigin="anonymous"
@@ -12,6 +16,7 @@
     <title>cafe. home</title>
   </head>
   <body>
+    <!---------- header and navbar ---------->
     <header>
       <div class="header-icon-container">
         <a href="" class="logo">
@@ -19,11 +24,10 @@
           cafe.
         </a>
       </div>
-
       <nav class="navbar">
         <a class="active" href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="icons">
@@ -32,12 +36,12 @@
         <a href="#" class="fab fa-instagram"></a>
       </div>
     </header>
-
-    <section id="page">
+    <!---------- main ---------->
+    <section id="page-grid">
       <main class="main-page">
         <section class="main-header-text">
           <h1>Godaste cafeèt i stan</h1>
-          <p>Prenumerera på vårt nyhetsbrev</p>
+          <p>Subscribe to our newsletter</p>
           <form action="" method="POST">
             <div id="main-form">
               <label for="email">Email</label>
@@ -50,7 +54,7 @@
               />
               <input
                 type="button"
-                value="Veckans nyheter"
+                value="Weekly news letter"
                 name="button"
                 class="main-btn"
               />
@@ -72,66 +76,116 @@
           </clipPath>
         </defs>
       </svg>
+      <!---------- card ---------->
       <article class="card-container">
         <section class="card">
-          <a href="http://">
-            <div class="imgBx">
-              <img
-                src="images/coffee-hero.jpg"
-                alt="spoon"
-                class="card-images"
-              />
-            </div>
+          <div class="imgBx">
+            <img src="images/darkroast.jpg" alt="spoon" class="card-images" />
+          </div>
+          <div class="card-content-container">
             <div class="card-content">
-              <h2>Daily dose of coffee</h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+              <h2>Real coffee beans</h2>
+              <p>
+                På CAFE. House brinner vi för en härlig kaffeupplevelse.
+                bryggkaffet och espresson som serveras i våra coffee shops är
+                ett s.k. specialkaffe
+              </p>
             </div>
-          </a>
-        </section>
-      </article>
-
-      <article class="card-container">
-        <section class="card">
-          <div class="imgBx">
-            <img src="images/cafe2.jpg" alt="spoon" class="card-images" />
-          </div>
-          <div class="card-content">
-            <h2>Daily dose of coffee</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+            <div class="card--icons">
+              <i class="fab fa-facebook" id="facebook">
+                <a href="#" class="fab fa-twitter"></a>
+              </i>
+              <i class="fab fa-instagram" id="facebook">
+                <a href="#" class=""></a>
+              </i>
+            </div>
           </div>
         </section>
       </article>
       <article class="card-container">
         <section class="card">
           <div class="imgBx">
-            <img src="images/latteart.jpeg" alt="spoon" class="card-images" />
+            <img
+              src="images/brewed_coffee.jpg"
+              alt="spoon"
+              class="card-images"
+            />
           </div>
-          <div class="card-content">
-            <h2>Daily dose of coffee</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+          <div class="card-content-container">
+            <div class="card-content">
+              <h2>Espresso on the run</h2>
+              <p>
+                På CAFE. House brinner vi för en härlig kaffeupplevelse.
+                bryggkaffet och espresson som serveras i våra coffee shops är
+                ett s.k. specialkaffe
+              </p>
+            </div>
+            <div class="card--icons">
+              <i class="fab fa-facebook" id="facebook">
+                <a href="#" class="fab fa-twitter"></a>
+              </i>
+              <i class="fab fa-instagram" id="facebook">
+                <a href="#" class=""></a>
+              </i>
+            </div>
           </div>
         </section>
       </article>
       <article class="card-container">
         <section class="card">
           <div class="imgBx">
-            <img src="images/glass.jpeg" alt="spoon" class="card-images" />
+            <img src="images/drinking.jpg" alt="spoon" class="card-images" />
           </div>
-          <div class="card-content">
-            <h2>Daily dose of coffee</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            veniam aut quibusdam repellat voluptatum? Mollitia dolore nostrum
+          <div class="card-content-container">
+            <div class="card-content">
+              <h2>Relax and enjoy life</h2>
+              <p>
+                På CAFE. House brinner vi för en härlig kaffeupplevelse.
+                bryggkaffet och espresson som serveras i våra coffee shops är
+                ett s.k. specialkaffe
+              </p>
+            </div>
+            <div class="card--icons">
+              <i class="fab fa-facebook" id="facebook">
+                <a href="#" class="fab fa-twitter"></a>
+              </i>
+              <i class="fab fa-instagram" id="facebook">
+                <a href="#" class=""></a>
+              </i>
+            </div>
           </div>
         </section>
       </article>
-
-      <figure id="picture-left">
+      <article class="card-container">
+        <section class="card">
+          <div class="imgBx">
+            <img src="images/Team-img-6.jpg" alt="spoon" class="card-images" />
+          </div>
+          <div class="card-content-container">
+            <div class="card-content">
+              <h2>Our skilled baristas</h2>
+              <p>
+                På CAFE. House brinner vi för en härlig kaffeupplevelse.
+                bryggkaffet och espresson som serveras i våra coffee shops är
+                ett s.k. specialkaffe
+              </p>
+            </div>
+            <div class="card--icons">
+              <i class="fab fa-facebook" id="facebook">
+                <a href="#" class="fab fa-twitter"></a>
+              </i>
+              <i class="fab fa-instagram" id="facebook">
+                <a href="#" class=""></a>
+              </i>
+            </div>
+          </div>
+        </section>
+      </article>
+      <!---------- figure and text ---------->
+      <figure id="figure-left">
         <picture
           ><source
-            srcset="images/beans_360x202.jpeg"
+            srcset="images/beans_490x275.jpeg"
             media="(min-width: 769px)" />
           <source
             srcset="images/beans_384x216.jpeg"
@@ -142,22 +196,18 @@
             alt="Hands holding coffee beans."
         /></picture>
       </figure>
-      <section id="text-right">
-        <h1 class="picture-text-head">Only the best beans</h1>
-        <p class="picture-text">
-          "As with some Bordeaux chateaux or certain Burgundy domains, the
-          harvests from the best coffee farms are sold in advance, allocated by
-          roaster. The producers selected their roaster customers based on their
-          capacity to best add value to the raw material and to sell it at a
-          fair price. In order to be able to travel to their customers' premises
-          and to thus grasp how they work and better define their market, some
-          farmers now integrate their travel expenses into the price of their
-          coffees. For the subsequent harvests they can thus take into
-          consideration the consumption habits in the concerned countries." -
-          CEO
+      <article id="figure-text-right">
+        <p class="figure-text-head">Coffee beans</p>
+        <p class="figure-text">
+          A coffee bean is a seed of the Coffea plant and the source for coffee.
+          It is the pip inside the red or purple fruit often referred to as a
+          cherry. Just like ordinary cherries, the coffee fruit is also a
+          so-called stone fruit. Even though the coffee beans are not
+          technically beans, they are referred to as such because of their
+          resemblance to true beans.
         </p>
-      </section>
-      <figure id="picture-right">
+      </article>
+      <figure id="figure-right">
         <picture
           ><source
             srcset="images/latteart_490x275.jpeg"
@@ -171,50 +221,68 @@
             alt="Barista making latte art."
         /></picture>
       </figure>
-      <section id="text-left">
-        <h1 class="picture-text-head">Skilled baristas</h1>
-        <p class="picture-text">
-          No specials, no shortcuts, no excuses. When chef Sandra Vega took a
-          two-week trip to Japan, she had never had ramen before. Upon returning
-          to the States, she dedicated herself to learning how to make the
-          perfect bowl. The rest is history.
+      <article id="figure-text-left">
+        <p class="figure-text-head">Latteart</p>
+        <p class="figure-text">
+          Latte art is a method of preparing coffee created by pouring microfoam
+          into a shot of espresso and resulting in a pattern or design on the
+          surface of the latte. It can also be created or embellished by simply
+          "drawing" in the top layer of foam. Latte art is particularly
+          difficult to create consistently, due to the demanding conditions
+          required of both the espresso shot and milk. This, in turn, is limited
+          by the experience of the barista and quality of the espresso machine.
         </p>
-      </section>
-
+      </article>
+      <!---------- footer ---------->
       <footer class="footer-container">
         <div class="footer-list-item">
           <h3>OPENING HOURS</h3>
+          <table>
+            <tr>
+              <td>MONDAY</td>
+              <td>CLOSED</td>
+            </tr>
+            <tr>
+              <td>TUESDAY</td>
+              <td>09:00 - 22:00</td>
+            </tr>
+            <tr>
+              <td>WEDNESDAY</td>
+              <td>09:00 - 22:00</td>
+            </tr>
+            <tr>
+              <td>THURSDAY</td>
+              <td>09:00 - 22:00</td>
+            </tr>
+            <tr>
+              <td>FRIDAY</td>
+              <td>*09:00 - 1:00</td>
+            </tr>
+            <tr>
+              <td>SATURDAY</td>
+              <td>*12:00 - 01:00</td>
+            </tr>
+            <tr>
+              <td>*Depending on hangovers</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-list-item">
+          <h3>LOCATION</h3>
+          <p>Näsåkersv 56, 780 61, Göteborg, 0280-2168956</p>
+        </div>
+        <div class="footer-list-item">
+          <h3>WORK</h3>
           <p>
-            MONDAY CLOSED TUESDAY 9:00 - 22:00 WEDNESDAY 9:00 - 22:00 THURSDAY
-            9:00 - 22:00 FRIDAY * 9:00 - 1:00 SATURDAY * 12:00 - 01:00 SUNDAY
-            9:00 - 22:00
+            We welcome crazy coffee people, please leave your CV at the store.
           </p>
         </div>
         <div class="footer-list-item">
-          <h3>LATEST POSTS</h3>
-          <p>
-            EXPAND YOUR MIND, CHANGE EVERYTHING 14.02.2017 PLACES TO GET LOST
-            14.02.2017 LEWIS HOWES 14.02.2017 ELEVATE YOUR EXPECTATIONS
-            14.02.2017
-          </p>
-        </div>
-        <div class="footer-list-item">
-          <h3>CONTACT US</h3>
-          <p>
-            Coffebeans@qodeinteractive.com 1-444-123-4559 Raymond Boulevard 224,
-            New York
-          </p>
-        </div>
-        <div class="footer-list-item">
-          <h3>OTHER LOCATIONS</h3>
-          <p>
-            BARISTA COFFEE SHOP 2606 Saints Alley Tampa, FL 33602 BARISTA CAFE
-            3497 Watson Street Camden, NJ 08102
-          </p>
+          <h3>(fake) © 2021 Andreas Vilhelmsson (FEU) & Elin Eriksson (JSU)</h3>
+          <p>Thanks to Wikipedia, Google och lorem ipsus for content.</p>
         </div>
       </footer>
     </section>
-
     <script src="js/script.js"></script>
   </body>
 </html>

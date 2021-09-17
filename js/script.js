@@ -16,6 +16,7 @@ wish to monitor enters or exits another element (or the viewport),
 
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".main-page");
+const sectionTwo = document.querySelector("main-story-container");
 
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px"
@@ -36,6 +37,9 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+sectionOneObserver.observe( sectionTwo);
+
+/*****************  ************************/
 
 const str = document.querySelector('input');
 str.addEventListener('input', () => {

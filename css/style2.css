@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+@font-face {
+  font-family: ReadexPro;
+  src: url("ReadexPro-Light.ttf") format("truetype"),
+    url("ReadexPro-Medium.ttf") format("truetype");
+}
+:root {
+  --black-coffee: #38302e;
+  --dim-gray: #8d80a290;
+  --dim-gray-visible: #8d80a2;
+  --black: #333;
+  --light-color: #666;
+  --box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+  --white: #ebebeb;
+  --ultra-white: #fff;
+  --grey: #eee;
+  --red: #a41f66;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* line-height: 1.75px; */
+  font-family: "ReadexPro", "Roboto", sans-serif, Verdana, Geneva, Tahoma,
+    sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  /* min-height: 100vh; */
+  /* background: var(--white); */
+}
+
+/*************start header and navbar *************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  /* box-shadow: var(--box-shadow); */
+}
+
+.scrollbar {
+  background: var(--black);
+}
+
+.header-icon-container {
+  border: solid var(--white) 5px;
+
+  padding: 1rem;
+}
+header .logo {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--red);
+  font-weight: bolder;
+  font-size: 6rem;
+}
+
+header .navbar a {
+  font-size: 2.5rem;
+  padding: 0.5rem 2rem;
+  color: var(--white);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: var(--white);
+  background: var(--red);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--red);
+  border-radius: 50%;
+  background: var(--grey);
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: var(--white);
+  background: var(--red);
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+.main-story-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  margin-top: 15em;
+}
+
+.main-text {
+  padding-top: 10em;
+  margin-bottom: 10em;
+}
+
+.main--story--text {
+  white-space: pre-wrap;
+  color: black;
+  font-size: 3rem;
+  line-height: 1.75em;
+}
+
+.main--story--picture {
+  height: 143vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #20202070),
+    url(../images/food.jpg) no-repeat center center;
+  background-size: cover;
+  background-origin: content-box;
+  width: 100%;
+}
+
+.main--story--heading {
+  padding-top: 3em;
+  font-size: 4em;
+}
+
+.footer-container {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #20202070),
+    url(../images/footer2.jpg) no-repeat center center;
+  background-size: cover;
+  background-origin: content-box;
+  width: 100%;
+  max-width: 100;
+}
+
+.footer-list-item {
+  line-height: 1.75;
+  font-size: 1.5em;
+  color: var(--white);
+  flex-basis: 100%;
+  text-align: left;
+  margin: 5%;
+}
+
+/*************** end of navbar **************/
+
+/******* media querys *********/
+
+@media (max-width: 780px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: var(--black-coffee);
+  }
+}
