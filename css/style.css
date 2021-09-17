@@ -130,7 +130,7 @@ header .icons #menu-bars {
   font-size: 1.5em;
   border: solid 3px var(--white);
   padding: 1em;
-  color: #eee;
+  color: var(--grey);
   top: 45%;
   left: 5%;
 }
@@ -141,18 +141,18 @@ header .icons #menu-bars {
 
 .main-header-text > p {
   font-size: 2rem;
-  color: #eee;
+  color: var(--grey);
 }
 
 .main-form-input {
-  border: 3px solid #acacac;
+  border: 3px solid var(--white);
   background-color: transparent;
   margin: 1em;
   font-family: "Open Sans", sans-serif;
   width: calc(100% - 200px);
   font-size: 1em;
   padding: 11px 12px;
-  color: #bcbcbc;
+  color: var(--white);
   font-style: normal;
 }
 
@@ -166,7 +166,7 @@ header .icons #menu-bars {
 }
 
 ::placeholder {
-  color: var(--red);
+  color: var(--white);
   opacity: 1;
 }
 
@@ -259,22 +259,22 @@ header .icons #menu-bars {
   padding: 2rem;
   background: var(--red);
   height: fit-content;
-  color: var(#ebebeb);
+  color: var(--white);
   margin: 2em;
+  width: 95%;
 }
 
 .figure-text-head {
   padding: 5%;
-  color: #ebebeb;
+  color: var(--white);
   line-height: 1.75;
   font-size: 3em;
 }
 
 .figure-text {
   padding: 0% 5% 5%;
-  color: #ebebeb;
-  line-height: 4.5rem;
-  line-height: 1.75;
+  color: var(--white);
+  line-height: 3rem;
   font-size: 1.75em;
 }
 
@@ -407,10 +407,11 @@ td {
     grid-area: foot;
   }
 
-  #figure-text-left,
+  /* #figure-text-left,
   #figure-text-right {
     height: fit-content;
-  }
+    width: 95%;
+  } */
 }
 /*************** grid layout end ***************/
 
@@ -476,6 +477,7 @@ td {
   #text-left,
   #text-right {
     width: 100%;
+    margin: 0;
   }
 }
 /*************** header and navbar ***************/
