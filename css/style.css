@@ -303,8 +303,6 @@ header .icons #menu-bars {
   background-size: cover;
   background-origin: content-box;
   width: 100%;
-  max-width: 100;
-  padding: 2em 0em;
 }
 
 .footer-list-item {
@@ -317,7 +315,6 @@ header .icons #menu-bars {
 }
 
 table {
-  width: 100%;
   white-space: nowrap;
   white-space: pre;
 }
@@ -406,12 +403,6 @@ td {
   #page-grid > footer {
     grid-area: foot;
   }
-
-  /* #figure-text-left,
-  #figure-text-right {
-    height: fit-content;
-    width: 95%;
-  } */
 }
 /*************** grid layout end ***************/
 
@@ -501,3 +492,15 @@ td {
   }
 }
 /*************** card end ***************/
+
+/*************** footer ***************/
+@media (max-width: 789px) {
+  .footer-list-item:nth-of-type(1) {
+    padding-top: 2em;
+  }
+
+  .footer-list-item:nth-of-type(4) {
+    padding-bottom: 2em;
+  }
+}
+/*************** footer end ***************/
